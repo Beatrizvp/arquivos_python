@@ -1,3 +1,10 @@
+"""
+Questao 4
+Programe três estruturas de dados para imprimir listas de alimentos, clientes e funcionários.
+- Lista Duplamente encadeada; ( incluir todos seus comportamentos)
+- Lista Linear; (incluir os seus comportamentos)
+- Lista Encadeada. (incluir seus comportamentos)
+"""
 class Node:
     def __init__(self, data):
         self.data = data
