@@ -128,26 +128,24 @@ class Listaencadeada:
 lista = Listaencadeada()
 
 # INSERE
-lista.append(10)
-lista.append(6)
-lista.append(43)
-lista.append(23)
-lista.append(2)
-lista.append(0)
-print("Lista: ", lista, "\n")
+lista.append("Arroz")
+lista.append("Feijão")
+lista.append("Macarrao")
+lista.append("Bolacha")
+print("Alimentos: ", lista, "\n")
 
 
 # BUSCA
-print("busca 2: ", lista[4])
+print("busca Bolacha: ", lista[3])
 
 # REMOVE
 lista.remove(2)
-print("remove 2: ",lista.remove(2))
-print("Lista: ", lista)
+print("remove Bolacha: ",lista.remove("Bolacha"))
 
-# INSERE EM LOCAL
-lista.insert(2, 1000)
-print("\ninseriu na posicao 2 o valor 1000")
-print(lista)
+# INSERE ALIMENTOS EM ALGUMA POSICAO
+lista.insert(2, "Refrigerante")
+print("inseriu Refrigerante na posicao [2]")
+print("\nAlimentos: ", lista)
+
 
 
