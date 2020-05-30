@@ -5,17 +5,22 @@ Programe três estruturas de dados para imprimir listas de alimentos, clientes e
 - Lista Linear; (incluir os seus comportamentos)
 - Lista Encadeada. (incluir seus comportamentos)
 """
+
+
+##################################
+## NO
 class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
 
+##################################
+## LISTA ENCADEADA
 class Listaencadeada:
     # contrutor
     def __init__(self):
         self.head = None
         self._size = 0
-
     #######################
 
     def append(self, elemento):
@@ -43,11 +48,6 @@ class Listaencadeada:
             else:
                 raise IndexError(":p List index out of range")
         return pointer
-
-
-    def set(self, item, newitem):
-        pass
-
 
     def __setitem__(self, item, newitem):
         # lista[2] = 10
@@ -134,7 +134,8 @@ lista.append(43)
 lista.append(23)
 lista.append(2)
 lista.append(0)
-print("Lista: ", lista)
+print("Lista: ", lista, "\n")
+
 
 # BUSCA
 print("busca 2: ", lista[4])
@@ -143,5 +144,10 @@ print("busca 2: ", lista[4])
 lista.remove(2)
 print("remove 2: ",lista.remove(2))
 print("Lista: ", lista)
+
+# INSERE EM LOCAL
+lista.insert(2, 1000)
+print("\ninseriu na posicao 2 o valor 1000")
+print(lista)
 
 
