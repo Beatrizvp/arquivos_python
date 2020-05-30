@@ -144,7 +144,7 @@ print("remove Bolacha: ",lista.remove("Bolacha"))
 
 # INSERE ALIMENTOS EM ALGUMA POSICAO
 lista.insert(2, "Refrigerante")
-print("inseriu Refrigerante na posicao [2]")
+print("inseriu ['Refrigerante'] na posicao [2]")
 print("\nAlimentos: ", lista)
 
 
